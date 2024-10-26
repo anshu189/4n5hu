@@ -18,3 +18,8 @@
 ::-webkit-scrollbar {
     display: none;
 }
+
+*::selection{
+    background: transparent;
+    color: #f7f7f7;
+}
