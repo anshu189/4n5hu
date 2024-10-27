@@ -1,6 +1,6 @@
 {
   "short_name": "Anshu Portfolio",
-  "name": "Anshu Saini - React Developer",
+  "name": "Anshu Saini - Software Development Engineer",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +20,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
+  "theme_color": "#d99225",
   "background_color": "#ffffff"
 }
