@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { AuroraBackgroundDemo } from "./aurora-bg";
 import { BackgroundBeamsDemo } from "./beams-bg";
-import { Button, Dropdown, DropdownItem, DropdownMenu, DropdownTrigger, Switch } from "@nextui-org/react";
+import { Button, Dropdown, DropdownItem, DropdownMenu, DropdownTrigger } from "@nextui-org/react";
 
 export default function App() {
   const [color, setColor] = useState("warning")
@@ -50,14 +50,12 @@ export default function App() {
         
         </Dropdown>
       </div>
-      <div className="absolute top-6 left-0 z-20">
-        {/* <Button onClick={()=>setToggleBG(!toggleBG)} className="text-white text-sm md:text-md" color={"dafault"} variant="faded" radius="full">
+      <div className="absolute bottom-6 left-8 z-40">
+        <p onClick={()=>setToggleBG(!toggleBG)} className="text-white text-sm md:text-md cursor-pointer" color={"dafault"} variant="faded" radius="full">
           {toggleBG?"Aurora":"Beams"}
-        </Button>   */}
-        <Switch isSelected={toggleBG} onValueChange={setToggleBG} color="success" className="z-20">
-          {toggleBG?"Aurora":"Beams"}
-        </Switch>
+        </p>
       </div>
+      
       {toggleBG===true?<AuroraBackgroundDemo color={color}/>:<BackgroundBeamsDemo color={color}/>}
     </div>
   );
