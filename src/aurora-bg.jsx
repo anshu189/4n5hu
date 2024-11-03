@@ -1,24 +1,8 @@
 import { motion } from "framer-motion";
 import { AuroraBackground } from "./components/ui/aurora-background";
-import { Button, Chip, Link, Dropdown, DropdownTrigger, DropdownMenu, DropdownItem} from "@nextui-org/react";
-import { useState } from "react";
+import { Button, Chip, Link } from "@nextui-org/react";
 
-export function AuroraBackgroundDemo() {
-  const [color, setColor] = useState("warning")
-  const [selectedKeys, setSelectedKeys] = useState("Supreme");
-  const variants = {
-    Flat: "default",
-    Pro: "primary",
-    Purple: "secondary",
-    Emerland: "success",
-    Supreme: "warning",
-    Pinky: "danger"
-  };
-
-  const updateTheme=(key)=> {
-    setColor(variants[key]);
-  }
-
+export function AuroraBackgroundDemo({color}) {
   return (
     (<AuroraBackground className={'relative'}>
       <motion.div
@@ -49,33 +33,6 @@ export function AuroraBackgroundDemo() {
             </Link>
           </div>
       </motion.div>
-      <div className="absolute top-6 md:top-10 right-6 md:right-10">
-        <Dropdown>
-          <DropdownTrigger>
-            <Button variant="bordered" color={color}>
-              {selectedKeys}
-            </Button>
-          </DropdownTrigger>
-
-          <DropdownMenu 
-            onAction={(key) => updateTheme(key)}
-            variant="flat"
-            color={color}
-            disallowEmptySelection
-            selectionMode="single"
-            selectedKeys={selectedKeys}
-            onSelectionChange={setSelectedKeys}
-          >
-            <DropdownItem className="px-3 py-2 text-white" key="Flat">Flat</DropdownItem>
-            <DropdownItem className="px-3 py-2 text-white" key="Pro">Pro</DropdownItem>
-            <DropdownItem className="px-3 py-2 text-white" key="Purple">Purple</DropdownItem>
-            <DropdownItem className="px-3 py-2 text-white" key="Emerland">Emerland</DropdownItem>
-            <DropdownItem className="px-3 py-2 text-white" key="Supreme">Supreme</DropdownItem>
-            <DropdownItem className="px-3 py-2 text-white" key="Pinky">Pinky</DropdownItem>
-          </DropdownMenu>
-        
-        </Dropdown>
-      </div>
     </AuroraBackground>)
   );
 }

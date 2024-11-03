@@ -1,22 +1,8 @@
-import { useState } from "react";
 import { BackgroundBeams } from "./components/ui/background-beams";
-import { Button, Chip, Link, Dropdown, DropdownTrigger, DropdownMenu, DropdownItem} from "@nextui-org/react";
+import { Button, Chip, Link } from "@nextui-org/react";
 
-export function BackgroundBeamsDemo() {
-    const [color, setColor] = useState("warning")
-    const [selectedKeys, setSelectedKeys] = useState("Supreme");
-    const variants = {
-        Flat: "default",
-        Pro: "primary",
-        Purple: "secondary",
-        Emerland: "success",
-        Supreme: "warning",
-        Pinky: "danger"
-    };
+export function BackgroundBeamsDemo({color}) {
 
-    const updateTheme=(key)=> {
-        setColor(variants[key]);
-    }
   return (
     (<div
       className="h-[100vh] w-full bg-neutral-950 relative flex flex-col items-center justify-center antialiased">
@@ -37,34 +23,6 @@ export function BackgroundBeamsDemo() {
             </Button>
           </Link>
         </div>
-        <div className="absolute top-10 right-10">
-        <Dropdown>
-          <DropdownTrigger>
-            <Button variant="bordered" color={color}>
-              {selectedKeys}
-            </Button>
-          </DropdownTrigger>
-
-          <DropdownMenu 
-            aria-label="Action event example" 
-            onAction={(key) => updateTheme(key)}
-            variant="flat"
-            color={color}
-            disallowEmptySelection
-            selectionMode="single"
-            selectedKeys={selectedKeys}
-            onSelectionChange={setSelectedKeys}
-          >
-            <DropdownItem className="px-3 py-2 text-white" key="Flat">Flat</DropdownItem>
-            <DropdownItem className="px-3 py-2 text-white" key="Pro">Pro</DropdownItem>
-            <DropdownItem className="px-3 py-2 text-white" key="Purple">Purple</DropdownItem>
-            <DropdownItem className="px-3 py-2 text-white" key="Emerland">Emerland</DropdownItem>
-            <DropdownItem className="px-3 py-2 text-white" key="Supreme">Supreme</DropdownItem>
-            <DropdownItem className="px-3 py-2 text-white" key="Pinky">Pinky</DropdownItem>
-          </DropdownMenu>
-        
-        </Dropdown>
-      </div>
       <BackgroundBeams />
     </div>)
   );
