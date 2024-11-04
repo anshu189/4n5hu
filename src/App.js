@@ -56,7 +56,7 @@ export default function App() {
         </p>
       </div>
       
-      {toggleBG===true?<AuroraBackgroundDemo color={color}/>:<BackgroundBeamsDemo color={color}/>}
+      {toggleBG?<AuroraBackgroundDemo color={color}/>:<BackgroundBeamsDemo color={color}/>}
     </div>
   );
 }
