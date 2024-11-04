@@ -22,7 +22,7 @@ export default function App() {
 
   return (
     <div className="dark relative">
-      
+
       <div className="absolute top-6 md:top-10 right-6 md:right-10">
         <Dropdown>
           <DropdownTrigger>
