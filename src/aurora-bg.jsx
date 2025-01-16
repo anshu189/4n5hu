@@ -27,7 +27,7 @@ export function AuroraBackgroundDemo({color}) {
               <a href="https://advrtic.com" target="_blank" rel="noreferrer">Advrtic</a>
             </div>
 
-            <Link isExternal href="https://drive.google.com/file/d/1LvSrfjUkg--5Q6XdBOCJtPYsCjmMcRkA/view?usp=sharing">
+            <Link isExternal href="https://drive.google.com/file/d/1FEUTSVJ8Ht8Seq7DSMO1JQk4vkGp_Xla/view?usp=sharing">
               <Button className="mt-4 text-md md:text-lg" color={color} variant="faded" radius="sm" endContent={<svg className="w-3 rotate-45 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2 160 448c0 17.7 14.3 32 32 32s32-14.3 32-32l0-306.7L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/></svg>}>
                   Download Resume
               </Button>  
