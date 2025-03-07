@@ -6,7 +6,7 @@ export function BackgroundBeamsDemo({color}) {
   return (
     (<div
       className="relative h-full w-full bg-neutral-950 relative flex flex-col items-center justify-center antialiased">
-      <div className="outline-none h-screen flex flex-col items-center justify-center gap-6 text-[#f7f7f7] bg-transparent outline-none">
+      <div className="outline-none h-screen flex flex-col items-center justify-center gap-6 text-[#f7f7f7] bg-transparent outline-none z-20">
           <div class="flex items-start gap-2 md:gap-0 ml-6">
             <h1 className="text-5xl md:text-8xl font-semibold press-start">4n5hu</h1>
             <Chip color={color} variant="dot" className="hidden md:flex">SDE</Chip>
