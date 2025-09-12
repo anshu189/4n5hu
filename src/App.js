@@ -11,7 +11,7 @@ export default function App() {
     Flat: "default",
     Pro: "primary",
     Purple: "secondary",
-    Emerland: "success",
+    Emerald: "success",
     Supreme: "warning",
     Pinky: "danger"
   };
