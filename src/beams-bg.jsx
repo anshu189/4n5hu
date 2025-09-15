@@ -15,7 +15,7 @@ export function BackgroundBeamsDemo({color}) {
           <div className="flex items-center gap-4 text-lg md:text-2xl lucida">
             <a href="https://github.com/anshu189" target="_blank" rel="noreferrer">Github</a><span>|</span>
             <a href="https://www.linkedin.com/in/4n5hu" target="_blank" rel="noreferrer">Linkedin</a><span>|</span>
-            <a href="https://advrtic.com" target="_blank" rel="noreferrer">Advrtic</a>
+            <a href="https://advrtic4.webflow.io" target="_blank" rel="noreferrer">Advrtic</a>
           </div>
 
           <Link href="https://drive.google.com/file/d/18asHcX_U85qS3By8OUyK9CHoPTOZsbum">
